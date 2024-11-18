@@ -10,11 +10,7 @@ import org.testng.annotations.Test;
 
 public class TestVwoLogin {
 
-   @BeforeTest
-   public void setUp()
-   {
-       DriverManager.init();
-   }
+
 
     @Test
     public void vWO_Locatior()

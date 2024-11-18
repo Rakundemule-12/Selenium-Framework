@@ -40,7 +40,6 @@ public class DriverManager {
                case "chrome" :
                    ChromeOptions chromeOptions = new ChromeOptions();
                    chromeOptions.addArguments("--start-maximized");
-                   chromeOptions.addArguments("--guest");
                    driver = new ChromeDriver(chromeOptions);
                    break;
 
