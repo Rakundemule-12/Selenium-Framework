@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-
-    <test verbose="2" preserve-order="true" name="Selenium_Automation_Framework">
+<suite name="All Test Suite" parallel="methods" thread-count="2">
+    <test name="Selenium_Automation_Framework" verbose="2" preserve-order="true">
         <classes>
-            <class name= "org.example.VWOTests.TestsVwoLogin_POM">
+            <class name="org.example.VWOTests.TestsVwoLogin_POM">
+                <methods>
+                    <include name="testLoginNegativeVWO"/>
+                    <include name="testPositiveVWO"/>
+                </methods>
             </class>
         </classes>
     </test>

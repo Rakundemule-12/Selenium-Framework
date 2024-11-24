@@ -11,10 +11,9 @@ public class LoginPage_POM extends CommanToAllPage {
     WebDriver driver;
 
     public LoginPage_POM(WebDriver driver) {
+
         this.driver = driver;
     }
-
-
 
     // Page Locators
     private By username = By.id("login-username");
@@ -30,7 +29,7 @@ public class LoginPage_POM extends CommanToAllPage {
         driver.findElement(Signinbutton).click();
 
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

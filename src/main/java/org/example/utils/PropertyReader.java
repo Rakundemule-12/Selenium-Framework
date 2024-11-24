@@ -18,7 +18,7 @@ public class PropertyReader {
         try {
             fileInputStream = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/data.properties");
             p = new Properties();
-            p.load(fileInputStream);
+            p.load(fileInputStream);//src/main/resources src/main/resources/data.properties
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

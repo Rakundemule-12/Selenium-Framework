@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static org.example.drivers.DriverManager.getDriver;
+import static org.example.drivers.DriverManager_TL.getDriver;
 
 public class CommanToAllPage {
     // If you want to call something before every Page Object Class call, Put your Code here");
